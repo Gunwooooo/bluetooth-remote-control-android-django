@@ -1,0 +1,21 @@
+# db.sqlite3
+__pycache__/
+.DS_Store
+.venv
+venv
+Lib
+myenv
+pyvenv.cfg
+# migrations
+review_df.pickle
+review_store.pickle
+review_trainset.pickle
+review_user.pickle
+store_trainset.pickle
+*.pyc
+*~
+myvenv
+.DS_Store
+gw.mp4
+video
+requirements.txt

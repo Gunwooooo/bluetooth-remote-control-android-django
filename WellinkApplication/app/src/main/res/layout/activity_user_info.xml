@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.user.UserJoinActivity"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.15">
+        <ImageView
+            android:padding="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/logo_main"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.05"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.1"
+        android:weightSum="1"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"/>
+        <EditText
+            android:id="@+id/userInfo_editText_name"
+            android:layout_width="0dip"
+            android:layout_weight="0.8"
+            android:layout_height="match_parent"
+            android:hint="성명"
+            android:textSize="24sp"
+            android:inputType="textPersonName" />
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/userInfo_layout_inputProtector"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.1"
+        android:weightSum="1"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"/>
+        <EditText
+            android:id="@+id/userInfo_editText_protector"
+            android:layout_width="0dip"
+            android:layout_weight="0.5"
+            android:layout_height="match_parent"
+            android:hint="보호자 아이디"
+            android:textSize="24sp"
+            android:inputType="textPersonName" />
+        <Button
+            android:id="@+id/userInfo_btn_protectorInquire"
+            android:layout_width="0dip"
+            android:layout_weight="0.3"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/main_blue"
+            android:text="조회"
+            android:textSize="21sp"
+            android:textColor="@color/white" />
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.1"
+        android:weightSum="1"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"/>
+        <Button
+            android:backgroundTint="@color/backgroundGreen"
+            android:id="@+id/userInfo_btn_joinUser"
+            android:layout_width="0dip"
+            android:layout_weight="0.8"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:text="회원정보수정" />
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.35" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.15">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/logo_bottom" />
+    </LinearLayout>
+</LinearLayout>

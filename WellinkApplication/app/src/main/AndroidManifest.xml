@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.wellinkapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:icon="@mipmap/ic_main"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_main_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.WellinkApplication.NoActionBar"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="m">
+        <activity
+            android:name=".ui.CalendarInfo.CalendarActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.alarmInfo.AlarmActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.user.UserInfoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.hospitalInfo.HospitalInfoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.healthInfo.DetailHealthInfoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.healthInfo.HealthInfoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.user.UserJoinCompleteActivity"
+            android:exported="true" />
+        <activity android:name=".ui.user.UserJoinActivity" />
+        <activity android:name=".ui.user.UserLoginActivity" />
+        <activity android:name=".MenuActivity" />
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.WellinkApplication.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="765d88ec7b9fff761b86679872f038ef" />
+
+        <receiver
+            android:name=".ui.alarm.AlarmReceiver"
+            android:exported="false" />
+    </application>
+
+</manifest>

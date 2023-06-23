@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="itemList">
+        <item>메뉴 선택</item>
+        <item>내 정보</item>
+        <item>로그아웃</item>
+    </string-array>
+</resources>
